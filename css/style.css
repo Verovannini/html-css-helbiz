@@ -3,6 +3,13 @@
     max-width: 900px;
     margin: auto;
 }
+
+.box-centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* END COMMON */
 
 /* HEADER */
@@ -35,6 +42,27 @@ header nav .burger-menu{
 .menu.lang li:not(:last-child){
     border-right: 1px solid black;
     padding-right: 10px;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .teaser{
+    width: 70%;
+}
+.jumbotron .teaser h1{
+    font-size: 50px;
+}
+.jumbotron .teaser > p{
+    font-size: 20px;
+    padding: 20px 0;
 }
 /* END HEADER */
 
