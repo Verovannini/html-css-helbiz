@@ -76,6 +76,11 @@ header nav .burger-menu{
 /* END HEADER */
 
 /* MAIN */
+main h3{
+    font-size: 30px;
+    font-weight: 300;
+}
+
 /* Section Products */
 #products{
     padding: 30px 0;
@@ -89,7 +94,6 @@ header nav .burger-menu{
 }
 
 #products .inner-content h3{
-    font-size: 30px;
     padding-top: 40px;
 }
 #products .inner-content p{
@@ -126,10 +130,6 @@ header nav .burger-menu{
     padding: 0 160px;
 }
 
-#instructions .inner-content h3{
-    font-size: 30px;
-    font-weight: 300;
-}
 #instructions .inner-content h4{
     font-size: 18px;
     font-weight: 300;
@@ -155,31 +155,64 @@ header nav .burger-menu{
     text-decoration: none;
 }
 
-/* Colums Mobility */
+#info .inner-content{
+    text-align: center;
+    color: white;
+}
+
+/* Column Mobility */
 #info .mobility{
     background-image: url('../img/ScooterHelbiz-2400.jpg');
     background-size: cover;
     height: 400px;
     position: relative;
+    margin-bottom: 30px;
 }
 
-#info .mobility-content{
-    color: white;
-    text-align: center;
+#info .mobility .inner-content{
     width: 30%;
     position: absolute;
     top: 50%;
     right: 7%;
     transform: translate(0, -50%);
 }
-#info .mobility-content h2{
+#info .mobility .inner-content h2{
     font-size: 40px;
     font-weight: 300;
 }
 
+/* Column App e Find*/
+#info .inner-col{
+    margin-bottom: 30px;
+}
+#info .inner-col.app{
+    padding-right: 15px;
+}
+#info .inner-col.find{
+    padding-left: 15px;
+}
+
+#info .bg-app{
+    height: 350px;
+    background-image: url('../img/HelbiZAPP.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 50% 160%;
+    background-color: #364757;
+}
+#info .bg-find{
+    height: 350px;
+    background-image: url('../img/cities-1500.jpg');
+    background-size: cover;
+}
+
+#info h3{
+    padding-top: 30px;
+}
+
 /* Media query section info */
 @media screen and (max-width: 767px) {
-    #info .mobility-content{
+    #info .mobility .inner-content{
         width: 50%;
         position: absolute;
         top: 50%;
@@ -189,6 +222,24 @@ header nav .burger-menu{
 
     #info .mobility{
         background-position: right;
+    }
+
+    #info .mobility,
+    #info .app,
+    #info .find{
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #info .inner-col.app{
+        padding-right: 0;
+    }
+    #info .inner-col.find{
+        padding-left: 0;
+    }
+
+    #info .bg-app{
+        background-position: 50% -950%;
     }
 }
 
