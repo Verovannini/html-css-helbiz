@@ -14,6 +14,11 @@
 img{
     max-width: 100%;
 }
+
+.text{
+    font-size: 18px;
+    padding: 20px 0;
+}
 /* END COMMON */
 
 /* HEADER */
@@ -65,7 +70,7 @@ header nav .burger-menu{
     font-size: 40px;
 }
 .jumbotron .teaser > p{
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px 0;
 }
 /* END HEADER */
@@ -97,6 +102,10 @@ header nav .burger-menu{
 }
 
 /* Section Instructions */
+#instructions{
+    padding-bottom: 60px;
+}
+
 #instructions .banner{
     background-image: url('../img/HelbizBanner.jpg');
     background-size: cover;
@@ -110,7 +119,7 @@ header nav .burger-menu{
     top: 100px;
 }
 
-#instructions .info{
+#instructions .steps{
     padding-top: 70px;
 }
 #instructions .inner-content{
@@ -130,14 +139,59 @@ header nav .burger-menu{
     font-size: 13px;
 }
 
+/* Media query section intructions */
 @media screen and (max-width: 767px) {
-    #instructions .info{
-        padding-top: 230px;
+    #instructions .steps{
+        padding-top: 210px;
     }
     #instructions .inner-content{
         padding: 10px 60px;
     }
 }
+
+/* Section Infos */
+#info a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Colums Mobility */
+#info .mobility{
+    background-image: url('../img/ScooterHelbiz-2400.jpg');
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+#info .mobility-content{
+    color: white;
+    text-align: center;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translate(0, -50%);
+}
+#info .mobility-content h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+/* Media query section info */
+@media screen and (max-width: 767px) {
+    #info .mobility-content{
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    #info .mobility{
+        background-position: right;
+    }
+}
+
 /* END MAIN */
 
 
