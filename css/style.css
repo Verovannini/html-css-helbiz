@@ -1,7 +1,7 @@
 /* COMMON */
 .small-wrapper{
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .box-centered{
@@ -58,13 +58,13 @@ header nav .burger-menu{
     background-image: url('../img/hero-bg.jpg');
     background-size: cover;
     height: 400px;
-    color: #fff;
-    text-align: center;
     position: relative;
 }
 
 .jumbotron .teaser{
     width: 70%;
+    color: #fff;
+    text-align: center;
 }
 .jumbotron .teaser h1{
     font-size: 40px;
@@ -127,7 +127,7 @@ main h3{
     padding-top: 70px;
 }
 #instructions .inner-content{
-    padding: 0 160px;
+    padding: 0 140px;
 }
 
 #instructions .inner-content h4{
